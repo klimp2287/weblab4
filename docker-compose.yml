@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: shop_user
       POSTGRES_PASSWORD: shop_pass
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
 
@@ -30,7 +30,7 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: 'PLAINTEXT'
 
       # Идентификатор кластера (обязателен для KRaft)
-      CLUSTER_ID: 'MkU3OTM2TjJDR21vY3pSSTZha213Zw=='
+      CLUSTER_ID: 'MkU3OEVBNTcwNTJENDM2Qk'
 
       # Один брокер - коэффициенты репликации равны 1
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
